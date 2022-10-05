@@ -7,4 +7,4 @@
 - [Random User Generator API](https://randomuser.me/)
 
 ## 📹 Video
-
+https://user-images.githubusercontent.com/62856848/194005418-1e537e1b-0b9a-47bf-898a-147399c75a72.mp4
