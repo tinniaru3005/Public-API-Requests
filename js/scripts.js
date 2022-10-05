@@ -44,17 +44,16 @@ const displayUserInfo = (data) => {
              `;
         containerDiv.insertAdjacentHTML("beforeend", html);
     })
+    //Call function to open modal
+    openModal(); 
 }
 
-
-// ------------------------------------------
-//  EVENT LISTENERS
-// ------------------------------------------
-
-
-
-// ------------------------------------------
-//  POST DATA
-// ------------------------------------------
-
-
+//Function to open modal when a gallery item is clicked
+const openModal = () => {
+    [...document.getElementsByClassName('card')].forEach(card =>{
+        card.addEventListener("click", (e) => {
+        const index = card.getAttribute("data-index");
+        generateModal(employeesArr[index]);
+        })
+    })
+}
