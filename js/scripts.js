@@ -48,6 +48,8 @@ const displayUserInfo = (data) => {
     openModal(); 
 }
 
+
+
 //Function to open modal when a gallery item is clicked
 const openModal = () => {
     [...document.getElementsByClassName('card')].forEach(card =>{
@@ -56,4 +58,13 @@ const openModal = () => {
         generateModal(employeesArr[index]);
         })
     })
+}
+
+//Function to close modal when the button is clicked
+const closeModal = () => {
+    const button = document.getElementById('modal-close-btn');
+    const modalContainer = document.querySelector('.modal-container');
+    button.addEventListener("click", (e) => {
+        modalContainer.remove(); 
+    })  
 }
